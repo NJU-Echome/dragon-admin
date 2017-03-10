@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "The management system for administrator and operator.",
   "scripts": {
-    "dev": "egg-bin dev"
+    "dev": "egg-bin dev",
+    "test": "egg-bin test"
   },
   "repository": "git@github.com:NJU-Echome/dragon-admin.git",
   "author": "XWang1024 <xwang1024@126.com>",
@@ -11,9 +12,11 @@
   "dependencies": {
     "egg": "^1.0.0-rc.2",
     "egg-mysql": "^2.0.0",
-    "egg-view-nunjucks": "^2.0.0"
+    "egg-view-nunjucks": "^2.0.0",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "egg-bin": "^2.2.3"
+    "egg-bin": "^2.2.3",
+    "egg-mock": "^3.1.2"
   }
 }

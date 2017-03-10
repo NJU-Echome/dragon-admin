@@ -316,6 +316,12 @@ chan@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/chan/-/chan-0.6.1.tgz#ec0ad132e5bc62c27ef10ccbfc4d8dcd8ca00640"
 
+childprocess@~2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/childprocess/-/childprocess-2.0.2.tgz#3d684929748b1e13e8521cf619bde5440de85eb4"
+  dependencies:
+    utility "~1.6.0"
+
 chokidar@^1.6.0:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.6.1.tgz#2f4447ab5e96e50fb3d789fd90d4c72e0e4c70c2"
@@ -398,6 +404,13 @@ co@^4.0.0, co@^4.0.2, co@^4.4.0, co@^4.6.0:
 code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
+
+coffee@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/coffee/-/coffee-3.3.0.tgz#3cd8ec513427b4b301573caa0640c031172ae4f6"
+  dependencies:
+    childprocess "~2.0.0"
+    debug "~2.2.0"
 
 combined-stream@^1.0.5, combined-stream@~1.0.5:
   version "1.0.5"
@@ -726,6 +739,23 @@ egg-logrotator@^2.2.2:
   dependencies:
     moment "^2.14.1"
     mz "^2.4.0"
+
+egg-mock@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/egg-mock/-/egg-mock-3.1.2.tgz#ecf804078c54e701d9a267023abc34894ca0e5df"
+  dependencies:
+    await-event "^2.0.0"
+    co "^4.6.0"
+    coffee "^3.3.0"
+    debug "^2.6.1"
+    detect-port "^1.1.0"
+    egg-utils "^2.1.0"
+    get-ready "^2.0.1"
+    is-type-of "^1.0.0"
+    ko-sleep "^1.0.2"
+    merge-descriptors "^1.0.1"
+    mm "^2.1.0"
+    rimraf "^2.6.1"
 
 egg-multipart@^1.1.0:
   version "1.1.0"
@@ -1630,6 +1660,12 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
+ko-sleep@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ko-sleep/-/ko-sleep-1.0.2.tgz#aad4bd348adead8bb07d865db7c1e34a6b574000"
+  dependencies:
+    ms "^0.7.1"
+
 koa-bodyparser@^2.3.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/koa-bodyparser/-/koa-bodyparser-2.4.0.tgz#3a65194957cc738e8de96186763e23bc4ff157ab"
@@ -1783,6 +1819,10 @@ lodash.keys@^3.0.0:
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
 
+lodash@^4.17.4:
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+
 long@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/long/-/long-3.2.0.tgz#d821b7138ca1cb581c172990ef14db200b5c474b"
@@ -1798,6 +1838,10 @@ longest@^1.0.1:
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
+
+merge-descriptors@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
 
 merge-estraverse-visitors@^1.0.0:
   version "1.0.0"
@@ -1857,6 +1901,16 @@ mkdirp@0.5.1, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.1, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
+mm@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/mm/-/mm-2.1.0.tgz#722f0b0756f5e10106073cfcd647072ef7b17246"
+  dependencies:
+    is-type-of "^1.0.0"
+    ko-sleep "^1.0.2"
+    muk-prop "^0.5.3"
+    semver "^5.3.0"
+    thenify "^3.2.1"
+
 mocha@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/mocha/-/mocha-3.2.0.tgz#7dc4f45e5088075171a68896814e6ae9eb7a85e3"
@@ -1887,9 +1941,13 @@ ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
 
-ms@0.7.2, ms@~0.7.0:
+ms@0.7.2, ms@^0.7.1, ms@~0.7.0:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
+
+muk-prop@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/muk-prop/-/muk-prop-0.5.3.tgz#27b44bd7cadd4ba6064e117cef87ad83156a3587"
 
 multi-stage-sourcemap@^0.2.1:
   version "0.2.1"
@@ -2364,7 +2422,7 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@^2.5.4:
+rimraf@2, rimraf@^2.5.4, rimraf@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.1.tgz#c2338ec643df7a1b7fe5c54fa86f57428a55f33d"
   dependencies:
@@ -2398,7 +2456,7 @@ sdk-base@^3.0.1, sdk-base@^3.1.0:
     co "^4.6.0"
     is-type-of "^1.0.0"
 
-semver@^5.0.1, semver@~5.3.0:
+semver@^5.0.1, semver@^5.3.0, semver@~5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
 
@@ -2595,7 +2653,7 @@ thenify-all@^1.0.0:
   dependencies:
     thenify ">= 3.1.0 < 4"
 
-"thenify@>= 3.1.0 < 4":
+"thenify@>= 3.1.0 < 4", thenify@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/thenify/-/thenify-3.2.1.tgz#251fd1c80aff6e5cf57cb179ab1fcb724269bd11"
   dependencies:
@@ -2718,6 +2776,13 @@ utility@~1.4.0:
   resolved "https://registry.yarnpkg.com/utility/-/utility-1.4.0.tgz#746722986e2a9e2a4621e7ce364dd5abc8ddbaea"
   dependencies:
     copy-to "~2.0.1"
+
+utility@~1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/utility/-/utility-1.6.0.tgz#e5bfb6a783a9c392b9fe70fe45c67fc24405c7e9"
+  dependencies:
+    copy-to "~2.0.1"
+    escape-html "~1.0.3"
 
 uuid@^3.0.0, uuid@^3.0.1:
   version "3.0.1"

@@ -1,5 +1,6 @@
 'use strict';
 
 module.exports = app => {
-  app.get('/', 'index.index');
+  const prefix = '/api/v1';
+  app.resources('ServiceCategory', `${prefix}/serviceCategory`, 'serviceCategory');
 };
